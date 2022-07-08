@@ -1,2 +1,2 @@
 # E-commerce Store for Volte Technologies
-Delivering accessible power solutio to the people that need it most.
+Delivering accessible power solutions to the people that need it most.
