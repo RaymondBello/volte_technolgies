@@ -1,1 +1,1 @@
-# volter_technolgies
+# E-commerce Store for Volte Technologies
