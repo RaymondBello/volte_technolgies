@@ -7,26 +7,30 @@ const Home = ({ products, bannerData }) => {
 
   return (
     <div>
-      <HeroBanner />
-      {console.log(bannerData)}
+      {/* Website Banner */}
+      <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+      
+      {/* Product Heading */}
       <div className='products-heading'>
         <h2>
-          Best Selling Products
+          Our Products
         </h2>
         <p>
           Inverters for all your off-grid needs
         </p>
       </div>
 
+      {/* Product Gallery */}
       <div className='products-container'>
+        {/* '?' to check if products exists */}
         {products?.map(
-          (product) => product.name
+          (product) => <Product key={product._id} product={product} />
         )}
       </div>
 
       <br />
-      
-      <FooterBanner/>
+      <FooterBanner footerBanner={bannerData && bannerData[0]} />
+
     </div>
   )
 }
